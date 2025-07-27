@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyCHq6roc-ttBzqCuT2hJ5GI_a1VFo2_m-4")
+genai.configure(api_key="Enter your API key")
 model = genai.GenerativeModel('gemini-1.5-flash')
 chat = model.start_chat(history=[])
 
